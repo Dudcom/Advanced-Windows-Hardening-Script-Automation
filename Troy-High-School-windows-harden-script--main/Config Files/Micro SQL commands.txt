@@ -1,0 +1,5 @@
+ALTER LOGIN sa DISABLE;
+SELECT is_disabled FROM sys.sql_logins WHERE name = 'sa';
+ALTER LOGIN [sa] WITH NAME = MyNewSA;
+EXEC sp_configure 'remote access', 0;
+RECONFIGURE;

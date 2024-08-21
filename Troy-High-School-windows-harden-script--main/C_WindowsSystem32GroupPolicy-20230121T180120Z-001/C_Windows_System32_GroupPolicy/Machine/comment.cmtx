@@ -1,0 +1,62 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="FullArmor.Policies.0EF0F32B_7305_4FC7_BBEB_D43DCC622C81"></using>
+    <using prefix="ns1" namespace="FullArmor.Policies.3B9EA2B5_A1D1_4CD5_9EDE_75B22990BC21"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.AllowBuildPreview"></using>
+    <using prefix="ns3" namespace="Microsoft.Policies.AppHVSI"></using>
+    <using prefix="ns4" namespace="Microsoft.Policies.AppPrivacy"></using>
+    <using prefix="ns5" namespace="Microsoft.Policies.AutoPlay"></using>
+    <using prefix="ns6" namespace="Microsoft.Policies.BITS"></using>
+    <using prefix="ns7" namespace="Microsoft.Policies.Camera"></using>
+    <using prefix="ns8" namespace="Microsoft.Policies.CloudContent"></using>
+    <using prefix="ns9" namespace="Microsoft.Policies.Connect"></using>
+    <using prefix="ns10" namespace="Microsoft.Policies.CredentialProviders"></using>
+    <using prefix="ns11" namespace="Microsoft.Policies.CredentialsSSP"></using>
+    <using prefix="ns12" namespace="Microsoft.Policies.DNSClient"></using>
+    <using prefix="ns13" namespace="Microsoft.Policies.DataCollection"></using>
+    <using prefix="ns14" namespace="Microsoft.Policies.DeviceSoftwareSetup"></using>
+    <using prefix="ns15" namespace="Microsoft.Policies.EventLogs"></using>
+    <using prefix="ns16" namespace="Microsoft.Policies.FeedbackNotifications"></using>
+    <using prefix="ns17" namespace="Microsoft.Policies.FileShareShadowCopy.Provider"></using>
+    <using prefix="ns18" namespace="Microsoft.Policies.FolderRedirection"></using>
+    <using prefix="ns19" namespace="Microsoft.Policies.Globalization"></using>
+    <using prefix="ns20" namespace="Microsoft.Policies.GroupPolicy"></using>
+    <using prefix="ns21" namespace="Microsoft.Policies.InkWatson"></using>
+    <using prefix="ns22" namespace="Microsoft.Policies.InternetCommunicationManagement"></using>
+    <using prefix="ns23" namespace="Microsoft.Policies.InternetExplorer"></using>
+    <using prefix="ns24" namespace="Microsoft.Policies.Kerberos"></using>
+    <using prefix="ns25" namespace="Microsoft.Policies.MSI"></using>
+    <using prefix="ns26" namespace="Microsoft.Policies.MicrosoftAccount"></using>
+    <using prefix="ns27" namespace="Microsoft.Policies.MicrosoftPassportForWork"></using>
+    <using prefix="ns28" namespace="Microsoft.Policies.OneDrive"></using>
+    <using prefix="ns29" namespace="Microsoft.Policies.PerformancePerftrack"></using>
+    <using prefix="ns30" namespace="Microsoft.Policies.PowerManagement"></using>
+    <using prefix="ns31" namespace="Microsoft.Policies.PowerShell"></using>
+    <using prefix="ns32" namespace="Microsoft.Policies.PreviousVersions"></using>
+    <using prefix="ns33" namespace="Microsoft.Policies.RemoteAssistance"></using>
+    <using prefix="ns34" namespace="Microsoft.Policies.RemoteProcedureCalls"></using>
+    <using prefix="ns35" namespace="Microsoft.Policies.Scripts"></using>
+    <using prefix="ns36" namespace="Microsoft.Policies.Sensors"></using>
+    <using prefix="ns37" namespace="Microsoft.Policies.SmartScreen"></using>
+    <using prefix="ns38" namespace="Microsoft.Policies.TabletPC.ShapeCollector"></using>
+    <using prefix="ns39" namespace="Microsoft.Policies.TerminalServer"></using>
+    <using prefix="ns40" namespace="Microsoft.Policies.UserProfiles"></using>
+    <using prefix="ns41" namespace="Microsoft.Policies.WindowsDefender"></using>
+    <using prefix="ns42" namespace="Microsoft.Policies.WindowsErrorReporting"></using>
+    <using prefix="ns43" namespace="Microsoft.Policies.WindowsExplorer"></using>
+    <using prefix="ns44" namespace="Microsoft.Policies.WindowsExplorer2"></using>
+    <using prefix="ns45" namespace="Microsoft.Policies.WindowsInkWorkspace"></using>
+    <using prefix="ns46" namespace="Microsoft.Policies.WindowsLogon"></using>
+    <using prefix="ns47" namespace="Microsoft.Policies.WindowsLogon2"></using>
+    <using prefix="ns48" namespace="Microsoft.Policies.WindowsRemoteManagement"></using>
+    <using prefix="ns49" namespace="Microsoft.Policies.WindowsRemoteShell"></using>
+    <using prefix="ns50" namespace="Microsoft.Windows.DeviceGuard"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate></admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable></stringTable>
+  </resources>
+</policyComments>

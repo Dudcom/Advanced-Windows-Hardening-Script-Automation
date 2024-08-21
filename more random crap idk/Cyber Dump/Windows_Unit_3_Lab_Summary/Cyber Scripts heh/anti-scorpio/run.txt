@@ -1,0 +1,2 @@
+Set-ExecutionPolicy Unrestricted -Confirm -Force
+.\main.ps1

@@ -1,0 +1,2566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScoringResource>
+	<!-- Unique Identifier -->
+	<!-- Format: OS_year_round_tier -->
+	<!-- Format: OS_year_round -->
+	<!-- Format: OS_round -->
+	<ResourceID>Server2022_cpxvi_sf_pg</ResourceID>
+
+	<!-- Image Tier -->
+	<!--
+	Feedback will be disabled if this value does not match this teams tier in
+	teams.txt
+	-->
+	<!-- Leave blank to disable -->
+	<Tier>Platinum</Tier>
+	<Tier>Gold</Tier>
+
+	<!-- Branding -->
+	<!-- This changes the desktop icon text and service name -->
+	<Branding>CyberPatriot</Branding>
+
+	<!-- Scoring Title -->
+	<!-- Format: CyberPatriot Round OS -->
+	<Title>CP-XVI Semifinal Round Server 2022</Title>
+
+	<!--
+	This is the secret team verification key. This key is used to verify the
+	team ID on the client side only. This does not affect the server, or
+	on-line verification. Changing this key prevents the re-use of previously
+	used keys.
+	-->
+	<TeamKey>CyberPatriotXVI</TeamKey>
+
+	<!-- URL of scoring server -->
+	<!-- Primary: https://54.243.182.228/ccs/upload -->
+	<!-- Backup: https://54.243.182.235/ccs/upload -->
+	<!-- UK: https://54.243.223.132/ccs/upload -->
+	<ScoringUrl>https://54.243.182.228/ccs/upload</ScoringUrl>
+	<ScoringUrlBackup>https://54.243.182.235/ccs/upload</ScoringUrlBackup>
+
+	<!-- URL of scoring downloads -->
+	<!-- Primary: https://54.243.182.228/ccs/download -->
+	<!-- Backup: https://54.243.182.235/ccs/download -->
+	<!-- UK: https://54.243.223.132/ccs/download -->
+	<DownloadUrl>https://54.243.182.228/ccs/download</DownloadUrl>
+	<DownloadUrlBackup>https://54.243.182.235/ccs/download</DownloadUrlBackup>
+
+	<!-- URL of the scoreboard -->
+	<!--
+	This is also required for passing messages to the local scoring reports,
+	leave this blank to completely disable the scoreboard and the ability to
+	pass messages to the local scoring reports.
+	-->
+	<!-- Primary: http://54.243.195.23 -->
+	<!-- Backup: http://54.204.38.205 -->
+	<!-- UK: http://54.235.154.203 -->
+	<ScoreboardUrl>http://54.243.195.23</ScoreboardUrl>
+	<ScoreboardUrlBackup>http://54.204.38.205</ScoreboardUrlBackup>
+
+	<!--
+	Set this to true to disable the scoreboard but still be able to pass
+	messages to the local scoring reports
+	-->
+	<HideScoreboard>false</HideScoreboard>
+
+	<!-- README URL -->
+	<!-- Leave blank to disable -->
+	<!-- Use pw_readme.py to generate the random string -->
+	<!-- All lowercase -->
+	<!-- Format: year_round_tier_difficulty_os_readme_randomstring.aspx -->
+	<ReadmeUrl>https://www.uscyberpatriot.org/Pages/Readme/cpxvi_sf_pg_h_server2022_readme_ttr4mvkmar.aspx</ReadmeUrl>
+
+	<!--
+	Set this to true to hide the real README until a valid Unique ID is
+	entered and the image is receiving feedback.
+	-->
+	<HideReadme>true</HideReadme>
+
+	<!-- CyberPatriot Tech Support URL -->
+	<!-- Leave blank to disable -->
+	<SupportUrl>https://fedgovdemo.webex.com/fedgovdemo/j.php?MTID=mb5012258fa5011ceec34f6b46c9d6b5d</SupportUrl>
+
+	<!-- Use these time servers -->
+	<!-- Set primary to ScoreboardUrl -->
+	<!-- Leave blank to disable -->
+	<TimeServers>
+		<Primary>http://54.243.195.23/ping</Primary>
+		<Primary>http://scoreboard1.uscyberpatriot.org/ping</Primary>
+		<!-- HTTP Time servers -->
+		<Secondary>http://time.unitarium.com/utc/</Secondary>
+		<Secondary>http://worldtimeapi.org/timezone/etc/utc</Secondary>
+		<Secondary>http://www.zulutime.net/</Secondary>
+		<!-- HTTPS Time servers -->
+		<!--
+		<Secondary>https://nist.time.gov/</Secondary>
+		<Secondary>https://time.is/UTC</Secondary>
+		<Secondary>https://www.time.gov/</Secondary>
+		<Secondary>http://viv.ebay.com/ws/eBayISAPI.dll?EbayTime</Secondary>
+		<Secondary>https://www.thetimenow.com/utc/coordinated_universal_time</Secondary>
+		<Secondary>https://www.timeanddate.com/worldclock/timezone/utc</Secondary>
+		<Secondary>https://www.utctime.net/</Secondary>
+		<Secondary>https://www.worldtimeserver.com/current_time_in_UTC.aspx</Secondary>
+		-->
+	</TimeServers>
+
+	<!-- Destruct Image -->
+	<DestructImage>
+		<!-- Valid date format: YYYY-MM-DD HH:MM or HH:MM:SS -->
+		<Before>2023-12-15 05:00</Before>
+		<After>2024-01-30 05:00</After>
+		<!-- This is the time duration that the VM has been Powered on -->
+		<!-- without being reset or rebooted -->
+		<!-- If unsure, set this to StopImageAfter + 1 hour -->
+		<!-- Valid format: HH:MM or HH:MM:SS -->
+		<Uptime>05:00</Uptime>
+		<!-- This is the time duration that the team has been playing -->
+		<!-- Do not set this value -->
+		<!-- Valid format: HH:MM or HH:MM:SS -->
+		<Playtime/>
+		<InvalidClient>true</InvalidClient>
+		<!-- Destruct if Unique ID not Valid -->
+		<InvalidTeam>00:20</InvalidTeam>
+	</DestructImage>
+
+	<!-- Disable Feedback -->
+	<DisableFeedback>
+		<!-- Valid date format: YYYY-MM-DD HH:MM or HH:MM:SS -->
+		<Before>2023-12-15 05:00</Before>
+		<After>2024-01-30 05:00</After>
+		<!-- This is the time duration that the VM has been Powered on -->
+		<!-- without being reset or rebooted -->
+		<!-- If unsure, set this to StopImageAfter + 30 minutes -->
+		<!-- Valid format: HH:MM or HH:MM:SS -->
+		<Uptime>04:30</Uptime>
+		<!-- This is the time duration that the team has been playing -->
+		<!-- Do not set this value -->
+		<!-- Valid format: HH:MM or HH:MM:SS -->
+		<Playtime/>
+		<NoConnection>true</NoConnection>
+		<InvalidClient>true</InvalidClient>
+		<InvalidTeam>true</InvalidTeam>
+		<InvalidTier>true</InvalidTier>
+	</DisableFeedback>
+
+	<!-- Display a warning after this amount of time -->
+	<!-- Set this to 'Elapsed Time Before Warning is Displayed' -->
+	<!-- Valid format: HH:MM or HH:MM:SS -->
+	<WarnAfter>03:30</WarnAfter>
+	<!-- Stop scoring after this amount of time -->
+	<!-- Set this to 'Length of Competition' -->
+	<!-- Valid format: HH:MM or HH:MM:SS -->
+	<StopImageAfter>04:00</StopImageAfter>
+	<!-- Do not set this value -->
+	<StopTeamAfter/>
+
+	<!-- Time before first run -->
+	<StartupTime>60</StartupTime>
+
+	<!-- Time between runs -->
+	<IntervalTime>60</IntervalTime>
+
+	<!-- Time out for server uploads -->
+	<UploadTimeout>20</UploadTimeout>
+
+	<!-- This command is executed when total points are gained -->
+	<!-- Play is part of SoX, and is cross-platform -->
+	<OnPointsGained>
+		<Execute>%INSTALL_PATH%\sox.exe %INSTALL_PATH%\gain.wav -d -q</Execute>
+		<Execute>%INSTALL_PATH%\Notify.exe You Gained Points</Execute>
+	</OnPointsGained>
+	<!-- This command is executed when total points are lost -->
+	<!-- Play is part of SoX, and is cross-platform -->
+	<OnPointsLost>
+		<Execute>%INSTALL_PATH%\sox.exe %INSTALL_PATH%\alarm.wav -d -q</Execute>
+		<Execute>%INSTALL_PATH%\Notify.exe You Lost Points</Execute>
+	</OnPointsLost>
+	<!-- This command is executed when the unique ID is invalid -->
+	<!-- Play is part of SoX, and is cross-platform -->
+	<OnInvalidTeam>
+		<Execute>%INSTALL_PATH%\sox.exe %INSTALL_PATH%\siren.wav -d -q</Execute>
+		<Execute>%INSTALL_PATH%\Notify.exe WARNING: Invalid Unique Identifier</Execute>
+	</OnInvalidTeam>
+	<!-- This command is executed when the warning time condition is met -->
+	<!-- Play is part of SoX, and is cross-platform -->
+	<OnWarntime>
+		<Execute>%INSTALL_PATH%\sox.exe %INSTALL_PATH%\gong.wav -d -q</Execute>
+		<Execute>%INSTALL_PATH%\Notify.exe WARNING: Your Team is Approaching the Maximum Competition Time</Execute>
+	</OnWarntime>
+	<!-- This command is executed when the over time condition is met -->
+	<!-- Play is part of SoX, and is cross-platform -->
+	<OnOvertime>
+		<Execute>%INSTALL_PATH%\sox.exe %INSTALL_PATH%\horn.wav -d -q</Execute>
+		<Execute>%INSTALL_PATH%\Notify.exe WARNING: Your Team is Over the Maximum Competition Time</Execute>
+	</OnOvertime>
+	<!-- This command is executed when multiple instances are detected -->
+	<!-- Play is part of SoX, and is cross-platform -->
+	<OnMultipleInstances>
+		<Execute>%INSTALL_PATH%\sox.exe %INSTALL_PATH%\siren.wav -d -q</Execute>
+		<Execute>%INSTALL_PATH%\Notify.exe WARNING: Multiple Instances Detected</Execute>
+	</OnMultipleInstances>
+
+	<!-- Maximum number of times to run the OnWarntime commands -->
+	<AlertWarntimeMax>2</AlertWarntimeMax>
+
+	<!-- Maximum number of times to run the OnOvertime commands -->
+	<AlertOvertimeMax>3</AlertOvertimeMax>
+
+	<!-- Display warning on multiple instances -->
+	<WarnMultipleInstances>true</WarnMultipleInstances>
+
+	<!-- Display watermark -->
+	<Watermark>true</Watermark>
+
+	<!-- Automatically append point values to description -->
+	<AutoDisplayPoints>true</AutoDisplayPoints>
+
+	<!-- Installation path -->
+	<InstallPath>C:\CyberPatriot</InstallPath>
+
+	<!-- Unencrypted xml file containing TeamID -->
+	<TeamConfig>ScoringConfig</TeamConfig>
+
+	<!-- Path of html scoring report (omit extension) -->
+	<HtmlReport>ScoringReport</HtmlReport>
+
+	<!-- Path of html scoring report Template (omit extension) -->
+	<HtmlReportTemplate>ScoringReportTemplate</HtmlReportTemplate>
+
+	<!-- Path of encrypted scoring reports (omit extension) -->
+	<XmlReport>ScoringData/ScoringReport</XmlReport>
+
+	<!-- "Red Shirt" tamper detection -->
+	<!-- This file gets deleted on boot up -->
+	<!-- Used to detect manual deletion of scoring logs -->
+	<RedShirt>tempfile</RedShirt>
+
+	<!-- Enable Anti-Scripting Checks -->
+	<!-- Disables feedback if 3 or more authorized users are deleted -->
+	<!-- Disables feedback if 3 or more authorized user directories are deleted -->
+	<AntiScripting>
+		<Enabled>true</Enabled>
+		<Threshold>3</Threshold>
+	</AntiScripting>
+
+	<!-- These commands are executed when the client is installed -->
+	<!-- Pay attention to these commands, could mess up forensics questions -->
+	<OnInstall>
+		<!-- Clear temporary directory -->
+		<Execute>cmd.exe /c del /q %WINDIR%\Temp\*</Execute>
+		<Execute>cmd.exe /c for /d %x in (%WINDIR%\Temp\*) do @rd /s /q &quot;%x&quot;</Execute>
+
+		<!-- Remove prefetch files -->
+		<Execute>cmd.exe /c del /q %WINDIR%\Prefetch\CCS*</Execute>
+		<Execute>cmd.exe /c del /q %WINDIR%\Prefetch\*</Execute>
+		<Execute>cmd.exe /c for /d %x in (%WINDIR%\Prefetch\*) do @rd /s /q &quot;%x&quot;</Execute>
+
+		<!-- Clear all recycling bins -->
+		<Execute>cmd.exe /c rd /s /q %SYSTEMDRIVE%\$Recycle.bin</Execute>
+
+		<!-- Clear the icon caches -->
+		<Execute>cmd.exe /c ie4uinit.exe -ClearIconCache</Execute>
+		<Execute>cmd.exe /c ie4uinit.exe -show</Execute>
+
+		<!-- Remove Powershell history -->
+		<Execute>cmd.exe /c powershell -Command &quot;Clear-History&quot;</Execute>
+		<Execute>cmd.exe /c for /d %x in (%HOMEDRIVE%\Users\*) do @(del /q &quot;%x\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt&quot; 2> nul)</Execute>
+
+		<!-- Disable automatic sample submission -->
+		<Execute>cmd.exe /c powershell -Command &quot;Set-MpPreference -SubmitSamplesConsent 2&quot;</Execute>
+		<Execute>cmd.exe /c reg add &quot;HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet&quot; /v SubmitSamplesConsent /t REG_DWORD /d 2 /f</Execute>
+
+		<!-- Add Windows Defender exclusion -->
+		<Execute>cmd.exe /c powershell -Command &quot;Add-MpPreference -ExclusionPath %INSTALL_PATH%\ -Force&quot;</Execute>
+		<Execute>cmd.exe /c reg add &quot;HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Exclusions\Paths&quot; /v %INSTALL_PATH%\ /t REG_SZ /d 0 /f</Execute>
+
+		<!-- Clear deleted data to reduce disk size -->
+		<Execute>cmd.exe /c sdelete.exe /accepteula -z %SYSTEMDRIVE%</Execute>
+	</OnInstall>
+
+	<!--
+	Category Descriptions
+	Setting <Replace> to 1 will output "%DESCRIPTION% check passed" instead of
+	the check description on the scoring report
+	Typically this is only done at semifinals for Local Policy, Unwanted
+	Software, and application settings
+	-->
+	<Category><CategoryID>FOR</CategoryID><Replace>0</Replace><Description>Forensic Question</Description></Category>
+	<Category><CategoryID>USR</CategoryID><Replace>0</Replace><Description>User auditing</Description></Category>
+	<Category><CategoryID>ACT</CategoryID><Replace>0</Replace><Description>Account policy</Description></Category>
+	<Category><CategoryID>POL</CategoryID><Replace>1</Replace><Description>Local policy</Description></Category>
+	<Category><CategoryID>DEF</CategoryID><Replace>0</Replace><Description>Defensive countermeasure</Description></Category>
+	<Category><CategoryID>SYS</CategoryID><Replace>0</Replace><Description>Uncategorized operating system setting</Description></Category>
+	<Category><CategoryID>SRV</CategoryID><Replace>0</Replace><Description>Service auditing</Description></Category>
+	<Category><CategoryID>OUP</CategoryID><Replace>0</Replace><Description>Operating system update</Description></Category>
+	<Category><CategoryID>AUP</CategoryID><Replace>0</Replace><Description>Application update</Description></Category>
+	<Category><CategoryID>FIL</CategoryID><Replace>0</Replace><Description>Prohibited file</Description></Category>
+	<Category><CategoryID>SFT</CategoryID><Replace>1</Replace><Description>Unwanted software</Description></Category>
+	<Category><CategoryID>MAL</CategoryID><Replace>0</Replace><Description>Malware</Description></Category>
+	<Category><CategoryID>APP</CategoryID><Replace>1</Replace><Description>Application security</Description></Category>
+	<Category><CategoryID>PEN</CategoryID><Replace>0</Replace><Description>Penalty</Description></Category>
+	<Category><CategoryID>SCR</CategoryID><Replace>0</Replace><Description>Penalty</Description></Category>
+
+	<!-- Used to determine valid image -->
+	<!-- Leave blank, automatically generated by debug client -->
+	<ValidClient>
+		<DiskID/>
+		<ProductID/>
+		<InstallDate/>
+		<ClientPath/>
+		<ClientHash/>
+		<ResourcePath/>
+		<ResourceHash/>
+	</ValidClient>
+
+	<!-- All authorized users -->
+	<Users>
+		<!-- The user the competitor should log in as -->
+		<Primary>aang</Primary>
+		<!-- Authorized administrators -->
+		<Administrator>katara</Administrator>
+		<Administrator>sokka</Administrator>
+		<Administrator>toph</Administrator>
+		<Administrator>zuko</Administrator>
+		<Administrator>iroh</Administrator>
+		<!-- Authorized standard users -->
+		<Standard>appa</Standard>
+		<Standard>momo</Standard>
+		<Standard>suki</Standard>
+		<Standard>bumi</Standard>
+		<Standard>hakoda</Standard>
+		<Standard>jeongjeong</Standard>
+		<Standard>pakku</Standard>
+		<Standard>piandao</Standard>
+		<Standard>mai</Standard>
+		<Standard>tylee</Standard>
+		<Standard>tyro</Standard>
+		<Standard>jet</Standard>
+		<Standard>longshot</Standard>
+		<Standard>smellerbee</Standard>
+		<Standard>gurupathik</Standard>
+		<Standard>huu</Standard>
+		<Standard>tho</Standard>
+		<Standard>due</Standard>
+		<Standard>yue</Standard>
+		<Standard>yagoda</Standard>
+	</Users>
+
+	<!-- Create files and forensics questions -->
+	<Create>
+		<File>
+			<Path>C:\Users\%PRIMARY_USER%\Desktop\Forensics Question 1.txt</Path>
+			<Content>Instructions:
+
+1) Type the answer to the question in place of &lt;Type Answer Here&gt;
+
+2) Save the file (you will not receive credit until the file is saved)
+
+Example question (not scored):
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: &lt;Type Answer Here&gt;
+
+After correctly answering the question, the example question would look like:
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: Silver
+
+If the question has more than one answer, place each answer on a separate line,
+for example:
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: Silver
+ANSWER: Dusty
+
+Remember to save the file after answering. The scored question appears below.
+
+===============================================================================
+
+Following the recent compromise of our network, an attacker managed to steal
+the following NTLM hash using a DCSync attack.
+
+What is the decrypted, plain-text password from this hash?
+
+dd291e94fe4909c776f3a393be96ac53
+
+( EXAMPLE: secretpassword123! )
+
+ANSWER: &lt;Type Answer Here&gt;
+</Content>
+		</File>
+		<File>
+			<Path>C:\Users\%PRIMARY_USER%\Desktop\Forensics Question 2.txt</Path>
+			<Content>Instructions:
+
+1) Type the answer to the question in place of &lt;Type Answer Here&gt;
+
+2) Save the file (you will not receive credit until the file is saved)
+
+Example question (not scored):
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: &lt;Type Answer Here&gt;
+
+After correctly answering the question, the example question would look like:
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: Silver
+
+If the question has more than one answer, place each answer on a separate line,
+for example:
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: Silver
+ANSWER: Dusty
+
+Remember to save the file after answering. The scored question appears below.
+
+===============================================================================
+
+The DNS entry dc-01.afa.com has two CNAME aliases.
+
+What are the two aliases of dc-01.afa.com?
+
+( EXAMPLE: www )
+
+ANSWER: &lt;Type Answer Here&gt;
+ANSWER: &lt;Type Answer Here&gt;
+</Content>
+		</File>
+		<File>
+			<Path>C:\Users\%PRIMARY_USER%\Desktop\Forensics Question 3.txt</Path>
+			<Content>Instructions:
+
+1) Type the answer to the question in place of &lt;Type Answer Here&gt;
+
+2) Save the file (you will not receive credit until the file is saved)
+
+Example question (not scored):
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: &lt;Type Answer Here&gt;
+
+After correctly answering the question, the example question would look like:
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: Silver
+
+If the question has more than one answer, place each answer on a separate line,
+for example:
+
+What was the name of the Lone Ranger's horse?
+
+ANSWER: Silver
+ANSWER: Dusty
+
+Remember to save the file after answering. The scored question appears below.
+
+===============================================================================
+
+In order to set up SMB over QUIC in the future, IT requires information from
+the Server Authentication certificate that has already been generated.
+
+What is the subject and thumbprint of the certificate?
+
+( EXAMPLE: CN = DESKTOP )
+( EXAMPLE: 88032B3551FAF7DE26EFFFF814AA086E3DBD2A4F )
+
+ANSWER: &lt;Type Answer Here&gt;
+ANSWER: &lt;Type Answer Here&gt;
+</Content>
+		</File>
+	</Create>
+
+	<!-- ========================= -->
+	<!-- Forensics Questions (FOR) -->
+	<!-- ========================= -->
+
+	<!-- Forensics Question 1 -->
+	<!-- https://crackstation.net/ -->
+	<Check>
+		<CheckID>Q1</CheckID>
+		<Category>FOR</Category>
+		<Description>Forensics Question 1 correct</Description>
+		<Points>5</Points>
+		<Test>
+			<Type>file</Type>
+			<Name>T1</Name>
+			<FilePath>C:\Users\%PRIMARY_USER%\Desktop\Forensics Question 1.txt</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*secretsquirrel(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*secretkey(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<Contains>(?i)^\s*[A-Z]{6}:\s*iloveyou11(?:\s|$)</Contains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*password(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*Tw!nkl3t03z(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*dd291e94fe4909c776f3a393be96ac53(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*boomerang(?:\s|$)</NotContains>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Forensics Question 2 -->
+	<!-- DNS Manager->DC-01->Forward Lookup Zones->afa.com -->
+	<Check>
+		<CheckID>Q2</CheckID>
+		<Category>FOR</Category>
+		<Description>Forensics Question 2 correct</Description>
+		<Points>5</Points>
+		<Test>
+			<Type>file</Type>
+			<Name>T1</Name>
+			<FilePath>C:\Users\%PRIMARY_USER%\Desktop\Forensics Question 2.txt</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*dc-02(?:\.afa\.com\.?)?(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*dc-01(?:\.afa\.com\.?)?(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<Contains>(?i)^\s*[A-Z]{6}:\s*ns(?:\.afa\.com\.?)?(?:\s|$)</Contains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*email-01(?:\.afa\.com\.?)?(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*ftp-01(?:\.afa\.com\.?)?(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<Contains>(?i)^\s*[A-Z]{6}:\s*ns-01(?:\.afa\.com\.?)?(?:\s|$)</Contains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*web-01(?:\.afa\.com\.?)?(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*web-04(?:\.afa\.com\.?)?(?:\s|$)</NotContains>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Forensics Question 3 -->
+	<!-- certsrv.msc->Issued Certificates or C:\AFA\Certificates -->
+	<Check>
+		<CheckID>Q3</CheckID>
+		<Category>FOR</Category>
+		<Description>Forensics Question 3 correct</Description>
+		<Points>5</Points>
+		<Test>
+			<Type>file</Type>
+			<Name>T1</Name>
+			<FilePath>C:\Users\%PRIMARY_USER%\Desktop\Forensics Question 3.txt</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*88032B3551FAF7DE26EFFFF814AA086E3DBD2A4F(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*4300000003376dd209df3ae973000000000003(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*225f2aecd28c0cd24e16adb1d3915ee6df296bcd(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*7c6f67d00e2c953b164c421f05631efa422f84f7(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<Contains>(?i)^\s*[A-Z]{6}:\s*09cc385751ba7b5f5487864bac02dd583098b480(?:\s|$)</Contains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*(CN\s*=\s*)?EMAIL-01(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*(CN\s*=\s*)?WEB-01(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<Contains>(?i)^\s*[A-Z]{6}:\s*((CN|DNS\s+Name)\s*=\s*)?(DC-01|ns-01)(\.afa\.com)?(?:\s|$)</Contains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*(CN\s*=\s*)?afa-DC-01-CA-1(?:\s|$)</NotContains>
+			</T1>
+			<T1>
+				<Condition>Data</Condition>
+				<NotContains>(?i)^\s*[A-Z]{6}:\s*(CN\s*=\s*)?FTP-01(?:\s|$)</NotContains>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- =================== -->
+	<!-- User Auditing (USR) -->
+	<!-- =================== -->
+	<!-- Authorized users, groups, and other settings unique to users. -->
+
+	<!-- Removed unauthorized user yu -->
+	<Check>
+		<CheckID>YU</CheckID>
+		<Category>USR</Category>
+		<Description>Removed unauthorized user yu</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>user</Type>
+			<UserName>yu</UserName>
+		</Test>
+		<!-- Pass if the user is deleted/renamed -->
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+		<!-- Pass if the user is disabled -->
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Enabled</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+	
+	<!-- Removed unauthorized user xinfu -->
+	<Check>
+		<CheckID>XINF</CheckID>
+		<Category>USR</Category>
+		<Description>Removed unauthorized user xinfu</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>user</Type>
+			<UserName>xinfu</UserName>
+		</Test>
+		<!-- Pass if the user is deleted/renamed -->
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+		<!-- Pass if the user is disabled -->
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Enabled</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+	
+	<!-- User tho is not an administrator -->
+	<Check>
+		<CheckID>THO</CheckID>
+		<Category>USR</Category>
+		<Description>User tho is not an administrator</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>user</Type>
+			<UserName>tho</UserName>
+		</Test>
+		<!-- Pass if the user tho exists and does not have usri1_priv set to USER_PRIV_ADMIN -->
+		<!-- Groups that can set this Admin flag: Administrators, Enterprise Admins, Domain Admins -->
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Admin</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Computer WEB-04 is no longer managed by Domain Users -->
+	<Check>
+		<CheckID>WEB_MNG</CheckID>
+		<Category>USR</Category>
+		<Description>Computer WEB-04 is no longer managed by Domain Users</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>command</Type>
+			<Executable>C:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe</Executable>
+			<Argument>-NoLogo</Argument>
+			<Argument>-NoProfile</Argument>
+			<Argument>-NonInteractive</Argument>
+			<Argument>$FormatEnumerationLimit=-1;</Argument>
+			<Argument>$ProgressPreference='SilentlyContinue';</Argument>
+			<Argument>Get-ADComputer</Argument>
+			<Argument>-Filter</Argument>
+			<Argument>*</Argument>
+			<Argument>-Properties</Argument>
+			<Argument>AccountExpirationDate,CannotChangePassword,Certificates,localPolicyFlags,KerberosEncryptionType,ManagedBy,PasswordExpired,PasswordNeverExpires,PasswordNotRequired,TrustedForDelegation</Argument>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>ExitCode</Condition>
+				<Equals>0</Equals>
+			</T1>
+			<T1>
+				<Condition>StdOut</Condition>
+				<Contains>^Name\s+:\s+WEB-04</Contains>
+			</T1>
+			<T1>
+				<Condition>StdOut</Condition>
+				<NotContains>^ManagedBy\s+:\s+(?:CN\s*=\s*)?Domain\s+Users</NotContains>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Everyone is no longer a member of Pre-Windows 2000 Compatible Access group -->
+	<Check>
+		<CheckID>PW2000</CheckID>
+		<Category>USR</Category>
+		<Description>Everyone is no longer a member of Pre-Windows 2000 Compatible Access group</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>group</Type>
+			<GroupName>Pre-Windows 2000 Compatible Access</GroupName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Member</Condition>
+				<NotEquals>Everyone</NotEquals>
+			</T1>
+			<T1>
+				<Condition>Member</Condition>
+				<Equals>Authenticated Users</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- ====================== -->
+	<!-- Account Policies (ACT) -->
+	<!-- ====================== -->
+	<!-- Password Policy, Lockout Policy -->
+
+	<!-- Password Minimum age is greater than or equal to 1 -->
+	<Check>
+		<CheckID>MINAGE</CheckID>
+		<Category>ACT</Category>
+		<Description>A secure minimum password age exists</Description>
+		<Points>1</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>password_policy</Type>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>MinPasswordAge</Condition>
+				<GreaterThan>86399</GreaterThan>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- A secure kerberos maximum lifetime for service ticket is set -->
+	<!-- Secure value should be above 0 (or Ticket doesn't expire) but no larger than 600 minutes -->
+	<!-- Unfortunately, this key is stored in little endian, so we need to use some... unique regular expressions -->
+	<!--
+		Minimum value: 10 minutes is stored as 00bca06501000000 (10 * 600000000 = 6000000000 or 0x165a0bc00)
+		Maximum SCORED value: 600 minutes is stored as 0010acd153000000 (600 * 600000000 = 360000000000 or 0x53d1ac1000)
+		Next value: 601 minutes is stored as 00566ff553000000 (601 * 600000000 = 360600000000 or 0x53f56f5600)
+		Maximum value: 99999 is stored as 007aecb291360000 (99999 * 600000000 = 59999400000000 or 0x3691b2ec7a00)
+		
+		So, in order to check for a value between 10 and 600, first we want to match anything that ends with 01-53 in hex, with 6 trailing 0's
+			(?i).{8}(?:0[1-9A-F]|1[0-9A-F]|2[0-9A-F]|3[0-9A-F]|4[0-9A-F]|5[0-3])0{6}
+		This actually narrows it down to 10-601, which means we need to exclude 601 specifically
+	-->
+	<Check>
+		<CheckID>KERB_ST</CheckID>
+		<Category>ACT</Category>
+		<Description>A secure kerberos maximum lifetime for service ticket is set</Description>
+		<Points>1</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SECURITY\Policy\KerMinT</KeyPath>
+			<KeyName></KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<!-- 0 or Ticket doesn't expire -->
+			<T1>
+				<Condition>Value</Condition>
+				<NotEquals>0000000000000080</NotEquals>
+			</T1>
+			<!-- 10-601 -->
+			<T1>
+				<Condition>Value</Condition>
+				<Contains>(?i).{8}(?:0[1-9A-F]|1[0-9A-F]|2[0-9A-F]|3[0-9A-F]|4[0-9A-F]|5[0-3])0{6}</Contains>
+			</T1>
+			<!-- NOT 601 -->
+			<T1>
+				<Condition>Value</Condition>
+				<NotEquals>00566FF553000000</NotEquals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- ==================== -->
+	<!-- Local Policies (POL) -->
+	<!-- ==================== -->
+	<!-- Audit Policy, User Rights Assignment, Security Options -->
+	<!-- Security Options includes Network Security Options and Privilege Elevation Authorization -->
+
+	<!-- Audit Process Creation [Success] -->
+	<!-- Servers: Baseline Recommendation -->
+	<!-- Workstations: Baseline Recommendation -->
+	<Check>
+		<CheckID>AU_PCS</CheckID>
+		<Category>POL</Category>
+		<Description>Audit Process Creation [Success]</Description>
+		<Points>1</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>audit_policy</Type>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>DetailedTracking.ProcessCreation</Condition>
+				<Equals>Success</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Include command line data in process creation events [enabled] -->
+	<!--
+	
+	Maintaining an audit trail of system activity logs can help identify configuration errors,
+	troubleshoot service disruptions, and analyze compromises that have occurred, as well as detect
+	attacks. Audit logs are necessary to provide a trail of evidence in case the system or network
+	is compromised. Collecting this data is essential for analyzing the security of information assets
+	and detecting signs of suspicious and unexpected behavior. Enabling "Include command line data
+	for process creation events" will record the command line information with the process creation
+	events in the log. This can provide additional detail when malware has run on a system.
+	
+	Group Policy Editor > Local Computer Policy > Computer Configuration > Administrative Templates >
+	System > Audit Process Creation > Include command line in process creation events
+
+	Registry values:
+		No Key Exists = Not Configured (Disabled)
+		2 = Disabled
+		1 = Enabled
+	-->
+	<Check>
+		<CheckID>AU_PCICL</CheckID>
+		<Category>POL</Category>
+		<Description>Include command line data in process creation events [enabled]</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Audit</KeyPath>
+			<KeyName>ProcessCreationIncludeCmdLine_Enabled</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<Equals>1</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Domain Users may not enable computer and user accounts to be trusted for delegation -->
+	<!-- Enable computer and user accounts to be trusted for delegation should be set to no one or Administrators (DC) -->
+	<!-- Enable computer and user accounts to be trusted for delegation default is set to no one or Administrators (DC) -->
+	<Check>
+		<CheckID>SE_EDP</CheckID>
+		<Category>POL</Category>
+		<Description>Domain Users may not enable computer and user accounts to be trusted for delegation</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>user_rights</Type>
+			<ObjectName>Domain Users</ObjectName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>SeEnableDelegationPrivilege</Condition>
+				<NotEquals>true</NotEquals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Administrators may not act as part of the operating system -->
+	<!-- Act as part of the operating system should be set to no one -->
+	<!-- Act as part of the operating system default is set to no one -->
+	<Check>
+		<CheckID>SE_TCBP</CheckID>
+		<Category>POL</Category>
+		<Description>Administrators may not act as part of the operating system</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>user_rights</Type>
+			<ObjectName>Administrators</ObjectName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>SeTcbPrivilege</Condition>
+				<NotEquals>true</NotEquals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- CyberPatriot: Use only on Domain Controller. -->
+	<Check>
+		<CheckID>DC_LDAP</CheckID>
+		<Category>POL</Category>
+		<Description>LDAP server signing requirements [Require signing]</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Services\NTDS\Parameters</KeyPath>
+			<KeyName>LDAPServerIntegrity</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<Equals>2</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!--
+	Network access: Do not allow anonymous enumeration of SAM accounts and shares
+
+	This security setting determines whether anonymous enumeration of SAM accounts and shares is allowed.
+
+	Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. If you do not want to allow anonymous enumeration of SAM accounts and shares, then enable this policy.
+
+	Default: Disabled.
+	-->
+	<!--
+	Rationale: To prevent a malicious user from gathering account and share names via the network.
+
+	Impact: It will not be possible to grant access to users of other domains via one-way trusts because administrators in the trusting domain will not be able to enumerate lists of accounts from the other domain.
+	-->
+	<!-- CyberPatriot: May be used any time. Advanced check. -->
+	<Check>
+		<CheckID>NA_RA</CheckID>
+		<Category>POL</Category>
+		<Description>Do not allow anonymous enumeration of SAM accounts and shares [enabled]</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Control\Lsa</KeyPath>
+			<KeyName>RestrictAnonymous</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<Equals>1</Equals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- =============================== -->
+	<!-- Defensive Countermeasures (DEF) -->
+	<!-- =============================== -->
+	<!-- Firewall, Anti-virus, Encryption -->
+	
+	<!-- Firewall protection has been enabled -->
+	<Check>
+		<CheckID>FWALL</CheckID>
+		<Category>DEF</Category>
+		<Description>Firewall protection has been enabled</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>firewall</Type>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</KeyPath>
+			<KeyName>EnableFirewall</KeyName>
+		</Test>
+		<Test>
+			<Name>T3</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</KeyPath>
+			<KeyName>EnableFirewall</KeyName>
+		</Test>
+		<Test>
+			<Name>T4</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</KeyPath>
+			<KeyName>EnableFirewall</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Enabled</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T3>
+			<T4>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T4>
+		</PassIf>
+		<PassIf>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T3>
+			<T4>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T4>
+			<T2>
+				<Condition>Value</Condition>
+				<Equals>1</Equals>
+			</T2>
+			<T3>
+				<Condition>Value</Condition>
+				<Equals>1</Equals>
+			</T3>
+			<T4>
+				<Condition>Value</Condition>
+				<Equals>1</Equals>
+			</T4>
+		</PassIf>
+	</Check>
+
+	<!-- ============================================= -->
+	<!-- Uncategorized Operating System Settings (SYS) -->
+	<!-- ============================================= -->
+	<!-- Remote Access, File Sharing, Screen Locking, Group Policy Settings, Operating System Permissions -->
+
+	<!-- Hardened UNC Paths configured for SYSVOL and NETLOGON -->
+	<!--
+	Windows Server 2022 hardened Universal Naming Convention (UNC) paths must be defined to require
+	mutual authentication and integrity for at least the \\*\SYSVOL and \\*\NETLOGON shares.
+	
+	Group Policy Editor > Local Computer Policy > Computer Configuration > Administrative Templates >
+	Network > Network Provider > Hardened UNC Paths
+
+	Registry values:
+		No Key Exists = Not Configured (Disabled)
+		2 = Disabled
+		1 = Enabled
+		
+	Valid UNC Paths:
+		\\<Server>\<Share> - The configuration entry applies to the share that has the specified name on the specified server.
+		\\*\<Share> - The configuration entry applies to the share that has the specified name on any server.
+		\\<Server>\* - The configuration entry applies to any share on the specified server.
+		\\<Server> - The same as \\<Server>\*
+	
+	A specific server or share name must be specified. All-wildcard paths such as \\* and \\*\* are not supported.
+	
+	Valid security properties:
+		RequireMutualAuthentication=<0|1> – When this property is set to 1, the selected UNC provider requires that
+		the UNC provider can authenticate the identity of the remote server (in addition to the server’s verification
+		of the client’s identity) in order to block spoofing attacks.
+
+		RequireIntegrity=<0|1> – When this property is set to 1, MUP and the selected UNC provider must use integrity
+		checks in order detect when third parties manipulate requests or responses while in transit between the client
+		and server in order to block tampering attacks.
+
+		RequirePrivacy=<0|1> – When this property is set to 1, MUP and the selected UNC provider must use a form of
+		encryption in such a way that when third parties see communication between the client and the server, they
+		cannot see any sensitive information that is contained within the communication.
+
+	Given that we know that there is atleast (in the scenario) one other domain controller, we will only score using
+	a wildcard for the server name portion. So the values \\*\SYSVOL and \\*\NETLOGON are all we will score.
+	We will score RequireIntegrity and RequireMutualAuthentication on both shares.
+	-->
+	<Check>
+		<CheckID>HUNC</CheckID>
+		<Category>SYS</Category>
+		<Description>Hardened UNC Paths configured for SYSVOL and NETLOGON</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths</KeyPath>
+			<KeyName>\\*\SYSVOL</KeyName>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths</KeyPath>
+			<KeyName>\\*\NETLOGON</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<Contains>(?i)RequireMutualAuthentication\s*=\s*1</Contains>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<Contains>(?i)RequireIntegrity\s*=\s*1</Contains>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T2>
+				<Condition>Value</Condition>
+				<Contains>(?i)RequireMutualAuthentication\s*=\s*1</Contains>
+			</T2>
+			<T2>
+				<Condition>Value</Condition>
+				<Contains>(?i)RequireIntegrity\s*=\s*1</Contains>
+			</T2>
+		</PassIf>
+	</Check>
+
+	<!-- Windows preserves zone information in file attachments -->
+	<!--
+	Attachments from outside sources may contain malicious code. Preserving zone of origin (internet, 
+	intranet, local, restricted) information on file attachments allows Windows to determine risk.
+	
+	Group Policy Editor > Local Computer Policy > User Configuration > Administrative Templates >
+	Windows Components > Attachment Manager > Do not preserve zone information in file attachments
+
+	Registry values:
+		No Key Exists = Not Configured (Disabled)
+		2 = Disabled
+		1 = Enabled
+	-->
+	<Check>
+		<CheckID>AM_SZI</CheckID>
+		<Category>SYS</Category>
+		<Description>Windows preserves zone information in file attachments</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_USERS</Key>
+			<AccountName>%PRIMARY_USER%</AccountName>
+			<KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Attachments</KeyPath>
+			<KeyName>SaveZoneInformation</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<NotEquals>1</NotEquals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Everyone is no longer allowed full share permissions to SYSVOL -->
+	<!-- http://www.selfadsi.org/deep-inside/microsoft-sid-attributes.htm -->
+	<!-- Depends on AD:DS -->
+	<Check>
+		<CheckID>EVYSYS</CheckID>
+		<Category>SYS</Category>
+		<Description>Everyone is no longer allowed full share permissions to SYSVOL</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Services\LanmanServer\Shares\Security</KeyPath>
+			<KeyName>SYSVOL</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Contains</Condition>
+				<!-- First part appears to be permissions, second part appears to be SID -->
+				<NotEquals>FF011F00010100000000000100000000</NotEquals>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- ====================== -->
+	<!-- Service Auditing (SRV) -->
+	<!-- ====================== -->
+	<!-- Enable and Disable services -->
+
+	<!-- INJECT: AD Certificate Services service has been stopped and disabled -->
+	<!-- Requires feature install -->
+	<Check>
+		<CheckID>ADCS</CheckID>
+		<Category>SRV</Category>
+		<Description>AD Certificate Services service has been stopped and disabled</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>service</Type>
+			<ServiceName>CertSvc</ServiceName>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Services\CertSvc</KeyPath>
+			<KeyName>Start</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>State</Condition>
+				<NotEquals>Running</NotEquals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T2>
+				<Condition>Value</Condition>
+				<GreaterThan>2</GreaterThan>
+			</T2>
+		</PassIf>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T2>
+		</PassIf>
+	</Check>
+
+	<!-- Windows Fax Service has been stopped and disabled -->
+	<!-- Requires feature install -->
+	<Check>
+		<CheckID>FAX</CheckID>
+		<Category>SRV</Category>
+		<Description>Windows Fax Service has been stopped and disabled</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>service</Type>
+			<ServiceName>Fax</ServiceName>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Services\Fax</KeyPath>
+			<KeyName>Start</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>State</Condition>
+				<NotEquals>Running</NotEquals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T2>
+				<Condition>Value</Condition>
+				<GreaterThan>3</GreaterThan>
+			</T2>
+		</PassIf>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T2>
+		</PassIf>
+	</Check>
+
+	<!-- ============================== -->
+	<!-- Operating System Updates (OUP) -->
+	<!-- ============================== -->
+	<!-- Windows Updates, Service Packs, Windows Automatic Update Settings -->
+
+	<!-- Windows 2022: The majority of Windows updates are installed -->
+	<Check>
+		<CheckID>WIN22</CheckID>
+		<Category>OUP</Category>
+		<Description>The majority of Windows updates are installed</Description>
+		<Points>3</Points>
+		<Test>
+			<Type>file</Type>
+			<Name>T1</Name>
+			<FilePath>C:\Windows\Sysnative\gdi32.dll</FilePath>
+		</Test>
+		<Test>
+			<Type>file</Type>
+			<Name>T2</Name>
+			<FilePath>C:\Windows\Sysnative\crypt32.dll</FilePath>
+		</Test>
+		<Test>
+			<Type>file</Type>
+			<Name>T3</Name>
+			<FilePath>C:\Windows\Sysnative\shell32.dll</FilePath>
+		</Test>
+		<Test>
+			<Type>file</Type>
+			<Name>T4</Name>
+			<FilePath>C:\Windows\Sysnative\ntdll.dll</FilePath>
+		</Test>
+		<Test>
+			<Type>file</Type>
+			<Name>T5</Name>
+			<FilePath>C:\Windows\Sysnative\ntoskrnl.exe</FilePath>
+		</Test>
+		<Test>
+			<Type>file</Type>
+			<Name>T6</Name>
+			<FilePath>C:\Windows\explorer.exe</FilePath>
+		</Test>
+		<!-- This will only pass if ALL of the files have had their build number increased -->
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>FileVersionBuild</Condition>
+				<GreaterThan>20348</GreaterThan>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T2>
+				<Condition>FileVersionBuild</Condition>
+				<GreaterThan>20348</GreaterThan>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T3>
+			<T3>
+				<Condition>FileVersionBuild</Condition>
+				<GreaterThan>20348</GreaterThan>
+			</T3>
+			<T4>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T4>
+			<T4>
+				<Condition>FileVersionBuild</Condition>
+				<GreaterThan>20348</GreaterThan>
+			</T4>
+			<T5>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T5>
+			<T5>
+				<Condition>FileVersionBuild</Condition>
+				<GreaterThan>20348</GreaterThan>
+			</T5>
+			<T6>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T6>
+			<T6>
+				<Condition>FileVersionBuild</Condition>
+				<GreaterThan>20348</GreaterThan>
+			</T6>
+		</PassIf>
+		<!-- If build number hasn't changed for ANY of the files -->
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>FileVersionBuild</Condition>
+				<Equals>20348</Equals>
+			</T1>
+			<T1>
+				<Condition>FileVersionRevision</Condition>
+				<GreaterThan>1969</GreaterThan>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T2>
+				<Condition>FileVersionBuild</Condition>
+				<Equals>20348</Equals>
+			</T2>
+			<T2>
+				<Condition>FileVersionRevision</Condition>
+				<GreaterThan>1905</GreaterThan>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T3>
+			<T3>
+				<Condition>FileVersionBuild</Condition>
+				<Equals>20348</Equals>
+			</T3>
+			<T3>
+				<Condition>FileVersionRevision</Condition>
+				<GreaterThan>2140</GreaterThan>
+			</T3>
+			<T4>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T4>
+			<T4>
+				<Condition>FileVersionBuild</Condition>
+				<Equals>20348</Equals>
+			</T4>
+			<T4>
+				<Condition>FileVersionRevision</Condition>
+				<GreaterThan>2030</GreaterThan>
+			</T4>
+			<T5>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T5>
+			<T5>
+				<Condition>FileVersionBuild</Condition>
+				<Equals>20348</Equals>
+			</T5>
+			<T5>
+				<Condition>FileVersionRevision</Condition>
+				<GreaterThan>2140</GreaterThan>
+			</T5>
+			<T6>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T6>
+			<T6>
+				<Condition>FileVersionBuild</Condition>
+				<Equals>20348</Equals>
+			</T6>
+			<T6>
+				<Condition>FileVersionRevision</Condition>
+				<GreaterThan>1969</GreaterThan>
+			</T6>
+		</PassIf>
+	</Check>
+
+	<!-- ========================= -->
+	<!-- Application Updates (AUP) -->
+	<!-- ========================= -->
+	<!-- Application Updates, Application Automatic Update Settings -->
+
+	<!-- Thunderbird has been updated -->
+	<!-- Checks if Thunderbird is greater than version 100 -->
+	<Check>
+		<CheckID>TBRD</CheckID>
+		<Category>AUP</Category>
+		<Description>Thunderbird has been updated</Description>
+		<Points>2</Points>
+		<Test>
+			<Type>file</Type>
+			<Name>T1</Name>
+			<FilePath>C:\Program Files\Mozilla Thunderbird\thunderbird.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\Mozilla Thunderbird\thunderbird.exe</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>FileVersionMajor</Condition>
+				<GreaterThan>100</GreaterThan>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- WinSCP has been updated -->
+	<!-- Checks if WinSCP is greater than version 5 -->
+	<Check>
+		<CheckID>WSCP</CheckID>
+		<Category>AUP</Category>
+		<Description>WinSCP has been updated</Description>
+		<Points>2</Points>
+		<Test>
+			<Type>file</Type>
+			<Name>T1</Name>
+			<FilePath>C:\Program Files\WinSCP\WinSCP.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\WinSCP\WinSCP.exe</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>FileVersionMajor</Condition>
+				<GreaterThan>5</GreaterThan>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- ======================================== -->
+	<!-- Policy Violation: Prohibited Files (FIL) -->
+	<!-- ======================================== -->
+	<!-- Individual files, Software Archives, Confidential Information -->
+	
+	<!-- Removed malicious GP startup script -->
+	<Check>
+		<CheckID>GP_SCR</CheckID>
+		<Category>FIL</Category>
+		<Description>Removed malicious GP startup script</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\SYSVOL\sysvol\afa.com\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\Startup\users.bat</FilePath>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\SYSVOL\sysvol\afa.com\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\Startup\</FilePath>
+			<FilePath>C:\Windows\SYSVOL\sysvol\afa.com\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\Windows NT\SecEdit\GptTmpl.inf</FilePath>
+			<FilePath>C:\Windows\SYSVOL\sysvol\afa.com\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\GPT.INI</FilePath>
+			<FilePath>C:\Windows\SYSVOL\sysvol\afa.com\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\GPT.INI</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<NotEquals>false</NotEquals>
+			</T2>
+		</PassIf>
+	</Check>
+	
+	<!-- Removed SharpHound software archive -->
+	<Check>
+		<CheckID>SHRHND</CheckID>
+		<Category>FIL</Category>
+		<Description>Removed SharpHound software archive</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\AFA\Software\SharpHound-v2.0.1.7z</FilePath>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>file</Type>
+			<FilePath>C:\AFA\Software\Google_Chrome_(64bit)_v97.0.4692.71.exe</FilePath>
+			<FilePath>C:\AFA\Software\npp.8.4.5.Installer.x64.exe</FilePath>
+			<FilePath>C:\AFA\Software\Thunderbird Setup 91.3.0.msi</FilePath>
+			<FilePath>C:\AFA\Software\winrar-6-02.exe</FilePath>
+			<FilePath>C:\AFA\Software\WinSCP-5.17.1-Setup.exe</FilePath>
+			<FilePath>C:\AFA\TODO\list.txt</FilePath>
+			<FilePath>C:\AFA\Certificates\SMBQUIC.cer</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<NotEquals>false</NotEquals>
+			</T2>
+		</PassIf>
+	</Check>
+
+	<!-- ========================================= -->
+	<!-- Policy Violation: Unwanted Software (SFT) -->
+	<!-- ========================================= -->
+	<!-- Games, Servers, Scareware, Adware, PUP, "Hacking" tools -->
+
+	<!-- Removed John the Ripper -->
+	<Check>
+		<CheckID>JOHN</CheckID>
+		<Category>SFT</Category>
+		<Description>Removed John the Ripper</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Program Files\Jonathon\run</FilePath>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>file</Type>
+			<FilePath>C:\Program Files\Google\Chrome\Application\chrome.exe</FilePath>
+			<FilePath>C:\Program Files\Mozilla Thunderbird\thunderbird.exe</FilePath>
+			<FilePath>C:\Program Files\Notepad++\notepad++.exe</FilePath>
+			<FilePath>C:\Program Files\WinRAR\Rar.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\WinSCP\WinSCP.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\Common Files\System\wab32.dll</FilePath>
+			<FilePath>C:\Program Files (x86)\Windows NT\Accessories\wordpad.exe</FilePath>
+			<FilePath>C:\ProgramData\Microsoft\AppV</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<NotEquals>false</NotEquals>
+			</T2>
+		</PassIf>
+	</Check>
+
+	<!-- Removed PowerShell-V2 -->
+	<Check>
+		<CheckID>PSH2</CheckID>
+		<Category>SFT</Category>
+		<Description>Removed PowerShell-V2</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe</FilePath>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\Sysnative\WindowsPowerShell\v1.0\pspluginwkr.dll</FilePath>
+		</Test>
+		<Test>
+			<Name>T3</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\assembly\GAC_MSIL\Microsoft.PowerShell.Security\1.0.0.0__31bf3856ad364e35\Microsoft.PowerShell.Security.dll</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T3>
+		</PassIf>
+	</Check>
+
+	<!-- Removed Pong -->
+	<Check>
+		<CheckID>PONG</CheckID>
+		<Category>SFT</Category>
+		<Description>Removed Pong</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Users\Public\Downloads\PingPong\empong.exe</FilePath>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>file</Type>
+			<FilePath>C:\Users\aang\Downloads\</FilePath>
+			<FilePath>C:\Users\Public\Downloads\</FilePath>
+			<FilePath>C:\Users\Public\Documents\</FilePath>
+			<FilePath>C:\Users\Public\Documents\</FilePath>
+			<FilePath>C:\Users\katara\Downloads\</FilePath>
+			<FilePath>C:\Users\zuko\Downloads\</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<NotEquals>false</NotEquals>
+			</T2>
+		</PassIf>
+	</Check>
+
+	<!-- =============================== -->
+	<!-- Policy Violation: Malware (MAL) -->
+	<!-- =============================== -->
+	<!-- Backdoors, Remote Administration Tools, Keyloggers, Password Sniffers -->
+	
+	<!-- Removed netcat backdoor -->
+	<Check>
+		<CheckID>NCAT</CheckID>
+		<Category>MAL</Category>
+		<Description>Removed netcat backdoor</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\Sysnative\Drivers\dwm.exe</FilePath>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\Sysnative\cmd.exe</FilePath>
+			<FilePath>C:\Windows\Sysnative\Drivers\http.sys</FilePath>
+			<FilePath>C:\Windows\Sysnative\dwm.exe</FilePath>
+			<FilePath>C:\Windows\Sysnative\Drivers\etc\hosts</FilePath>
+		</Test>
+		<Test>
+			<Name>T3</Name>
+			<Type>process</Type>
+			<ProcessName>\Windows\System32\drivers\dwm.exe</ProcessName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<NotEquals>false</NotEquals>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T3>
+		</PassIf>
+	</Check>
+	
+	<!-- Removed cryptcat backdoor -->
+	<!--
+	takeown /f cryptohost.exe
+	icacls cryptohost.exe /reset
+	taskkill /IM "cryptohost.exe" /F
+	del /f /s /q /a cryptohost.exe
+	-->
+	<Check>
+		<CheckID>CRYP</CheckID>
+		<Category>MAL</Category>
+		<Description>Removed cryptcat backdoor</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\Sysnative\cryptohost.exe</FilePath>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>file</Type>
+			<FilePath>C:\Windows\Sysnative\cmd.exe</FilePath>
+			<FilePath>C:\Windows\Sysnative\Drivers\http.sys</FilePath>
+			<FilePath>C:\Windows\Sysnative\dwm.exe</FilePath>
+			<FilePath>C:\Windows\Sysnative\Drivers\etc\hosts</FilePath>
+		</Test>
+		<Test>
+			<Name>T3</Name>
+			<Type>process</Type>
+			<ProcessName>\Windows\System32\cryptohost.exe</ProcessName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<NotEquals>false</NotEquals>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T3>
+		</PassIf>
+	</Check>
+
+	<!-- =================================== -->
+	<!-- Application Security Settings (APP) -->
+	<!-- =================================== -->
+	<!-- Critical Service Settings, Required Application Settings, Application Permission -->
+
+	<!-- Chrome blocks intrusive ads -->
+	<!-- Requires Chrome and Chrome group policy ADMX/ADML files -->
+	<!--
+	Administrative Templates->Google->Google Chrome->
+	Ads setting for sites with intrusive ads
+	-->
+	<Check>
+		<CheckID>CHR_ICS</CheckID>
+		<Category>APP</Category>
+		<Description>Chrome blocks intrusive ads</Description>
+		<Points>2</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>Software\Policies\Google\Chrome</KeyPath>
+			<KeyName>AdsSettingForIntrusiveAdsSites</KeyName>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>registry</Type>
+			<Key>HKEY_USERS</Key>
+			<AccountName>%PRIMARY_USER%</AccountName>
+			<KeyPath>Software\Policies\Google\Chrome</KeyPath>
+			<KeyName>AdsSettingForIntrusiveAdsSites</KeyName>
+		</Test>
+		<Test>
+			<Name>T3</Name>
+			<Type>file</Type>
+			<FilePath>C:\Users\%PRIMARY_USER%\AppData\Local\Google\Chrome\User Data\Default\Preferences</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<Equals>2</Equals>
+			</T1>
+		</PassIf>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T2>
+				<Condition>Value</Condition>
+				<Equals>2</Equals>
+			</T2>
+		</PassIf>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T2>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T3>
+			<T3>
+				<Condition>Data</Condition>
+				<Contains>[&quot;']profile[&quot;']</Contains>
+			</T3>
+			<T3>
+				<Condition>Data</Condition>
+				<NotContains>[&quot;']default_content_setting_values[&quot;']:\s*\{[^\}]*[&quot;']subresource_filter[&quot;']:\s*1</NotContains>
+			</T3>
+		</PassIf>
+	</Check>
+
+	<!-- DNS zone transfers to any server is disabled  -->
+	<!-- Depends on DNS Service -->
+	<!-- DNS->DC-01->Forward Lookup Zones->afa.com, properties, Zone Transfers -->
+	<Check>
+		<CheckID>DNS_ZONE</CheckID>
+		<Category>APP</Category>
+		<Description>DNS zone transfers to any server is disabled</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SOFTWARE\Microsoft\Windows NT\CurrentVersion\DNS Server\Zones\afa.com</KeyPath>
+			<KeyName>SecureSecondaries</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<GreaterThan>0</GreaterThan>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- Secured DNS server cache against pollution -->
+	<!-- Depends on DNS Service -->
+	<!-- Set-DnsServerCache -PollutionProtection $True -->
+	<Check>
+		<CheckID>DNS_CACHE</CheckID>
+		<Category>APP</Category>
+		<Description>Secured DNS server cache against pollution</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Services\DNS\Parameters</KeyPath>
+			<KeyName>SecureResponses</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<NotEquals>0</NotEquals>
+			</T1>
+		</PassIf>
+	</Check>
+	
+	<!-- Anonymous LDAP bind is disabled -->
+	<!-- ADSI Edit, Open a new connection to the "Configuration" naming context, then navigate to 
+	"CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=afa,DC=com". -->
+	<!-- Under properties, find the dsHeuristics value. This should be set to all 0's or blank. If the seventh
+		 digit is a 2, then anonymous LDAP access is enabled (fLDAPBlockAnonOps) -->
+	<!-- https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/e5899be4-862e-496f-9a38-33950617d2c5 -->
+	<Check>
+		<CheckID>LDAP_ANON</CheckID>
+		<Category>APP</Category>
+		<Description>Anonymous LDAP bind is disabled</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>command</Type>
+			<Executable>C:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe</Executable>
+			<Argument>-NoLogo</Argument>
+			<Argument>-NoProfile</Argument>
+			<Argument>-NonInteractive</Argument>
+			<Argument>$FormatEnumerationLimit=-1;</Argument>
+			<Argument>$ProgressPreference='SilentlyContinue';</Argument>
+			<Argument>(Get-ADObject</Argument>
+			<Argument>-Identity</Argument>
+			<Argument>(&quot;CN=Directory</Argument>
+			<Argument>Service,CN=Windows</Argument>
+			<Argument>NT,CN=Services,CN=Configuration,&quot;</Argument>
+			<Argument>+</Argument>
+			<Argument>(Get-ADDomain).DistinguishedName)</Argument>
+			<Argument>-Properties</Argument>
+			<Argument>*)</Argument>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>ExitCode</Condition>
+				<Equals>0</Equals>
+			</T1>
+			<T1>
+				<Condition>StdOut</Condition>
+				<Contains>^CanonicalName\s+:\s+afa\.com</Contains>
+			</T1>
+			<T1>
+				<Condition>StdOut</Condition>
+				<NotContains>^dSHeuristics\s+:\s+\d{6}2</NotContains>
+			</T1>
+		</PassIf>
+	</Check>
+	
+	<!-- Everyone no longer has "Replicating Directory Changes All" on AFA.COM -->
+	<!--
+	Active Directory Users and Computers
+	View->Advanced Features
+	Active Directory Users and Computers->afa.com, properties, Security
+	-->
+	<Check>
+		<CheckID>AD_DCSYNC</CheckID>
+		<Category>APP</Category>
+		<Description>Everyone no longer has Replicating Directory Changes permissions on AFA.COM</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>command</Type>
+			<Executable>C:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe</Executable>
+			<Argument>-NoLogo</Argument>
+			<Argument>-NoProfile</Argument>
+			<Argument>-NonInteractive</Argument>
+			<Argument>$FormatEnumerationLimit=-1;</Argument>
+			<Argument>$ProgressPreference='SilentlyContinue';</Argument>
+			<Argument>dsacls</Argument>
+			<Argument>&quot;dc=afa,dc=com&quot;</Argument>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>ExitCode</Condition>
+				<Equals>0</Equals>
+			</T1>
+			<T1>
+				<Condition>StdOut</Condition>
+				<Contains>^Owner:\s+BUILTIN\\Administrators</Contains>
+			</T1>
+			<T1>
+				<Condition>StdOut</Condition>
+				<NotContains>^Allow\s+Everyone\s+Replicating\s+Directory\s+Changes</NotContains>
+			</T1>
+		</PassIf>
+	</Check>
+
+	<!-- INJECT: SMB over QUIC is enabled -->
+	<!-- NOTE: This currently will not apply apart from Windows Server 2022 AZURE
+		 or Windows Server 2022 insider builds. However, as an inject we can have
+		 them prepare to apply it.
+		 
+		 The Set-SmbServerCertificateMapping command to apply a certificate will
+		 error out.
+		 -->
+	<!-- Set-SmbServerConfiguration -EnableSMBQUIC $True -->
+	<Check>
+		<CheckID>SMB_QUIC</CheckID>
+		<Category>APP</Category>
+		<Description>SMB over QUIC is enabled</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T3</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters</KeyPath>
+			<KeyName>EnableSMBQUIC</KeyName>
+		</Test>
+		<PassIf>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T3>
+			<T3>
+				<Condition>Value</Condition>
+				<Equals>1</Equals>
+			</T3>
+		</PassIf>
+		<PassIf>
+			<T3>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T3>
+		</PassIf>
+	</Check>
+	
+	<!-- ==================== -->
+	<!-- User Penalties (PEN) -->
+	<!-- ==================== -->
+
+	<!-- ============================== -->
+	<!-- Account Policy Penalties (PEN) -->
+	<!-- ============================== -->
+
+	<!-- Account lockout threshold less than 5 is deprecated -->
+	<Penalty>
+		<CheckID>LOCK</CheckID>
+		<Category>PEN</Category>
+		<Description>Account lockout threshold less than 5 is deprecated</Description>
+		<Points>3</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>account_lockout_policy</Type>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>LockoutThreshold</Condition>
+				<GreaterThan>0</GreaterThan>
+			</T1>
+			<T1>
+				<Condition>LockoutThreshold</Condition>
+				<LessThan>5</LessThan>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- ============================================== -->
+	<!-- Uncategorized Operating System Penalties (PEN) -->
+	<!-- ============================================== -->
+
+	<!-- ======================= -->
+	<!-- Service Penalties (PEN) -->
+	<!-- ======================= -->
+
+	<!-- DNS service is stopped or disabled -->
+	<Penalty>
+		<CheckID>SRV_DNS</CheckID>
+		<Category>PEN</Category>
+		<Description>DNS service is stopped or disabled</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>service</Type>
+			<ServiceName>DNS</ServiceName>
+		</Test>
+		<Test>
+			<Name>T2</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\Services\DNS</KeyPath>
+			<KeyName>Start</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>State</Condition>
+				<NotEquals>Running</NotEquals>
+			</T1>
+		</PassIf>
+		<PassIf>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T2>
+			<T2>
+				<Condition>Value</Condition>
+				<GreaterThan>2</GreaterThan>
+			</T2>
+		</PassIf>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+		<PassIf>
+			<T2>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T2>
+		</PassIf>
+	</Penalty>
+
+
+	<!-- SMB client service (v2/v3) disabled -->
+	<!-- 2: Enabled; 4: Disabled-->
+	<Penalty>
+		<CheckID>SRV_SMBC</CheckID>
+		<Category>PEN</Category>
+		<Description>SMB client service (v2/v3) disabled</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>System\CurrentControlSet\Services\mrxsmb20</KeyPath>
+			<KeyName>Start</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>true</Equals>
+			</T1>
+			<T1>
+				<Condition>Value</Condition>
+				<Equals>4</Equals>
+			</T1>
+		</PassIf>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- File sharing disabled for SYSVOL directory -->
+	<!-- SYSVOL Sharing -->
+	<Penalty>
+		<CheckID>SRV_SYS</CheckID>
+		<Category>PEN</Category>
+		<Description>File sharing disabled for SYSVOL directory</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\services\LanmanServer\Shares</KeyPath>
+			<KeyName>SYSVOL</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- File sharing disabled for NETLOGON directory -->
+	<!-- NETLOGON Sharing -->
+	<Penalty>
+		<CheckID>SRV_NET</CheckID>
+		<Category>PEN</Category>
+		<Description>File sharing disabled for NETLOGON directory</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\services\LanmanServer\Shares</KeyPath>
+			<KeyName>NETLOGON</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Penalty>
+	
+	<!-- File sharing disabled for AFA -->
+	<Penalty>
+		<CheckID>SRV_AFA</CheckID>
+		<Category>PEN</Category>
+		<Description>File sharing disabled for AFA</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>registry</Type>
+			<Key>HKEY_LOCAL_MACHINE</Key>
+			<KeyPath>SYSTEM\CurrentControlSet\services\LanmanServer\Shares</KeyPath>
+			<KeyName>AFA</KeyName>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- ================================= -->
+	<!-- Software and File Penalties (PEN) -->
+	<!-- ================================= -->
+
+	<!-- Google Chrome is not installed at the default location -->
+	<Penalty>
+		<CheckID>SFT_CHR</CheckID>
+		<Category>PEN</Category>
+		<Description>Google Chrome is not installed at the default location</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Program Files\Google\Chrome\Application\chrome.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<NotEquals>true</NotEquals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- Thunderbird is not installed at the default location -->
+	<Penalty>
+		<CheckID>SFT_TBRD</CheckID>
+		<Category>PEN</Category>
+		<Description>Thunderbird is not installed at the default location</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Program Files\Mozilla Thunderbird\thunderbird.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\Mozilla Thunderbird\thunderbird.exe</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<NotEquals>true</NotEquals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- Notepad++ is not installed at the default location -->
+	<Penalty>
+		<CheckID>SFT_NPP</CheckID>
+		<Category>PEN</Category>
+		<Description>Notepad++ is not installed at the default location</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Program Files\Notepad++\notepad++.exe</FilePath>
+			<FilePath>C:\Program Files (X86)\Notepad++\notepad++.exe</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<NotEquals>true</NotEquals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- WinRAR is not installed at the default location -->
+	<Penalty>
+		<CheckID>SFT_RAR</CheckID>
+		<Category>PEN</Category>
+		<Description>WinRAR is not installed at the default location</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Program Files\WinRAR\WinRAR.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\WinRAR\WinRAR.exe</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<NotEquals>true</NotEquals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- WinSCP is not installed at the default location -->
+	<Penalty>
+		<CheckID>SFT_SCP</CheckID>
+		<Category>PEN</Category>
+		<Description>WinSCP is not installed at the default location</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\Program Files\WinSCP\WinSCP.exe</FilePath>
+			<FilePath>C:\Program Files (x86)\WinSCP\WinSCP.exe</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<NotEquals>true</NotEquals>
+			</T1>
+		</PassIf>
+	</Penalty>
+
+	<!-- Critical business files deleted from SMB share -->
+	<Penalty>
+		<CheckID>FIL_SMB</CheckID>
+		<Category>PEN</Category>
+		<Description>Critical business file(s) deleted from SMB share</Description>
+		<Points>5</Points>
+		<Test>
+			<Name>T1</Name>
+			<Type>file</Type>
+			<FilePath>C:\AFA\Software\Google_Chrome_(64bit)_v97.0.4692.71.exe</FilePath>
+			<FilePath>C:\AFA\Software\npp.8.4.5.Installer.x64.exe</FilePath>
+			<FilePath>C:\AFA\Software\Thunderbird Setup 91.3.0.msi</FilePath>
+			<FilePath>C:\AFA\Software\winrar-6-02.exe</FilePath>
+			<FilePath>C:\AFA\Software\WinSCP-5.17.1-Setup.exe</FilePath>
+			<FilePath>C:\AFA\TODO\list.txt</FilePath>
+			<FilePath>C:\AFA\Certificates\SMBQUIC.cer</FilePath>
+		</Test>
+		<PassIf>
+			<T1>
+				<Condition>Exists</Condition>
+				<Equals>false</Equals>
+			</T1>
+		</PassIf>
+	</Penalty>
+	<!-- Unscored Checks (for obfuscation) -->
+	<!--
+		If a filename is given, then the file will be checked.
+		If a directory is given, then all of the files in that
+		directory will be checked.
+	-->
+	<AllFiles>
+		<FilePath>C:\</FilePath>
+		<FilePath>C:\mytrojan.exe</FilePath>
+		<FilePath>C:\rootkit.exe</FilePath>
+		<FilePath>C:\Program Files\Internet Explorer\</FilePath>
+		<FilePath>C:\Program Files\Windows Defender\</FilePath>
+		<FilePath>C:\Program Files\Windows Media Player\</FilePath>
+		<FilePath>C:\Program Files\Windows NT\Accessories\</FilePath>
+		<FilePath>C:\ProgramData\Microsoft\Windows Defender\Definition Updates\Default\</FilePath>
+		<FilePath>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\</FilePath>
+		<FilePath>C:\Windows\backdoor.exe</FilePath>
+		<FilePath>C:\Windows\mytrojan.dll</FilePath>
+		<FilePath>C:\Windows\nc.exe</FilePath>
+		<FilePath>C:\Windows\en-US\</FilePath>
+		<FilePath>C:\Windows\Media\</FilePath>
+		<FilePath>C:\Windows\Media\trojan.dll</FilePath>
+		<FilePath>C:\Windows\Microsoft.NET\Framework</FilePath>
+		<FilePath>C:\Windows\PolicyDefinitions\</FilePath>
+		<FilePath>C:\Windows\Prefetch\</FilePath>
+		<FilePath>C:\Windows\servicing\</FilePath>
+		<FilePath>C:\Windows\servicing\hidden.exe</FilePath>
+		<FilePath>C:\Windows\System32\Boot\</FilePath>
+		<FilePath>C:\Windows\System32\GroupPolicy\Machine\</FilePath>
+		<FilePath>C:\Windows\System32\GroupPolicy\Machine\keylogger.exe</FilePath>
+		<FilePath>C:\Windows\System32\GroupPolicy\User\</FilePath>
+		<FilePath>C:\Windows\System32\rootkit.dll</FilePath>
+		<FilePath>C:\Windows\System32\rootkit.exe</FilePath>
+		<FilePath>C:\Windows\System32\setup\</FilePath>
+		<FilePath>C:\Windows\System32\drivers\</FilePath>
+		<FilePath>C:\Windows\System\</FilePath>
+	</AllFiles>
+	<!--
+		Registry Entries to be checked in the form:
+		Key\KeyPath\KeyName
+		If there is no KeyName, then use a trailing slash, i.e.:
+		Key\KeyPath\
+	-->
+	<AllQueries>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Manager\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Tcpip\CurrentVersion\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppContainer\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run Once\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\</Key>
+		<Key>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\</Key>
+	</AllQueries>
+</ScoringResource>

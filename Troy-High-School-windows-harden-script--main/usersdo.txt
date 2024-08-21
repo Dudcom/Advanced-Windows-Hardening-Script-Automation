@@ -1,0 +1,89 @@
+Access Control Assistance Operators
+NT AUTHORITY\LocalService
+NT AUTHORITY\NetworkService
+END
+Administrators
+sigurd
+richard
+desmond
+jess
+lucas
+Administrator
+NT AUTHORITY\SYSTEM
+END
+Backup Operators
+NT AUTHORITY\LocalService
+NT AUTHORITY\NetworkService
+END
+Cryptographic Operators
+NT AUTHORITY\LocalService
+END
+Device Owners
+END
+Distributed COM Users
+NT AUTHORITY\Authenticated Users
+NT AUTHORITY\Interactive
+END
+Event Log Readers
+END
+Guests
+Guest
+END
+Hyper-V Administrators
+END
+IIS_IUSRS
+IUSR
+END
+Network Configuration Operators
+NT AUTHORITY\LocalService
+NT AUTHORITY\NetworkService
+END
+Performance Log Users
+NT AUTHORITY\LocalService
+NT AUTHORITY\NetworkService
+END
+Performance Monitor Users
+NT AUTHORITY\LocalService
+NT AUTHORITY\NetworkService
+END
+Power Users
+END
+Remote Desktop Users
+END
+Remote Management Users
+END
+Replicator
+END
+System Managed Accounts Group
+END
+Users
+sigurd
+richard
+desmond
+jess
+lucas
+eyelessdog
+ghostgirl
+masked
+maskhornets
+nutcracker
+oldbird
+baboonhawk
+bracken
+butler
+circuitbee
+coilhead
+jester
+thumper
+bunkerspider
+forestkeeper
+snareflea
+earthleviathan
+hoardingbug
+hygrodere
+manticoil
+roaminglocust
+sporelizard
+DefaultAccount
+Guest
+END

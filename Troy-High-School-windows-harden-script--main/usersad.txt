@@ -1,0 +1,55 @@
+Allowed RODC Password Replication Group
+END
+Cert Publishers
+END
+Denied RODC Password Replication Group
+Cert Publishers
+Domain Admins
+Domain Controllers
+Enterprise Admins
+Group Policy Creator Owners
+krbtgt
+Read-only Domain Controllers
+Schema Admins
+END
+DHCP Administrators
+END
+DHCP Users
+END
+DnsAdmins
+Administrator
+END
+RAS and IAS Servers
+END
+Cloneable Domain Controllers
+END
+DnsUpdateProxy
+END
+Domain Admins
+END
+Domain Computers
+END
+Domain Controllers
+END
+Domain Guests
+Guest
+END
+Domain Users
+END
+Group Policy Creator Owners
+END
+Key Admins
+END
+Protected Users
+END
+Read-only Domain Controllers
+END
+Enterprise Admins
+Administrator
+Enterprise Key Admins
+END
+Enterprise Read-only Domain Controllers
+END
+Schema Admins
+Administrator
+END
