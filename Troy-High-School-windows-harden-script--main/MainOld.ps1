@@ -408,7 +408,7 @@ if ($option -eq 4){
 
     # Define variables
     $GPOName = "NewSimpleSecureGPO"
-    $BackupPath = "C:\Users\Tanush\Desktop\E-citadel-troy-windows-scripts\Config Files\{BD711AA4-7448-4C04-920D-D8EDB69F05E5}"
+    $BackupPath = ".\Config Files\{BD711AA4-7448-4C04-920D-D8EDB69F05E5}"
 
     # Import the GroupPolicy module
     Import-Module GroupPolicy
