@@ -1,3 +1,7 @@
+I am cleaning this up in private, I don't plan to update that for at least a year so I suggest doing it yourself ! 
+
+
+
 Windows Hardening Script: 
 
 Run Order / Advice:
