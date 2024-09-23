@@ -1,4 +1,4 @@
-# Farily Advanced Windows hardening script/automation
+# Advanced-Windows-Hardening-Script-Automation
 
 This has been made public for those who would like to use it as well as the fact that I am now in college and no longer plan to partake in blue team competions + need resumue stuff XD 
 hope you enjoy 
